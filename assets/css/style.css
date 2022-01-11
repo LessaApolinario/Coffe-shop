@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  --text-color: #876445;
+  --other: #ca965c;
+  --label: #eec373;
+  --bg-color: #f4dfba;
+}
+
+.container {
+  display: flex;
+
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.container .left-side {
+  flex: 1 65%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 1rem 4rem;
+}
+
+.left-side header.top {
+  flex: 1 30%;
+}
+
+.left-side section.main-content {
+  flex: 1 70%;
+}
+
+.main-content h2 {
+  font: normal normal 300 normal 4rem/1.5 "Nunito", sans-serif;
+  width: 35rem;
+  padding: 1rem;
+}
+
+.main-content h2 + div.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 35rem;
+  padding: 1rem;
+}
+
+.buttons button {
+  padding: 1rem;
+  width: 12rem;
+
+  font: normal normal 300 normal 1rem/1.5 "Nunito", sans-serif;
+
+  border: none;
+
+  cursor: pointer;
+}
+
+.buttons button:first-child {
+  color: var(--bg-color);
+  background-color: var(--text-color);
+}
+
+.buttons button:last-child {
+  color: var(--text-color);
+  background-color: transparent;
+}
+
+.container .right-side {
+  flex: 1 35%;
+
+  background-image: url("../images/coffee_beans.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.left-side .top ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  line-height: 0;
+
+  list-style: none;
+}
+
+.top ul li {
+  color: var(--other);
+  font-size: 1.5rem;
+}
+
+.top ul li a {
+  text-decoration: none;
+  color: var(--other);
+
+  border-bottom: 0.5rem solid var(--text-color);
+  padding-bottom: 0.8rem;
+}
+
+.top ul li a:hover {
+  border: none;
+  padding-bottom: initial;
+}
