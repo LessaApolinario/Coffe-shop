@@ -4,13 +4,10 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 body {
   font-family: "Nunito", sans-serif;
+
+  height: 100vh;
 }
 
 :root {
@@ -81,12 +78,9 @@ body {
   background-color: transparent;
 }
 
-.container .right-side {
+.container img:nth-child(2) {
   flex: 1 35%;
-
-  background-image: url("../images/coffee_beans.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  object-fit: cover;
   height: 100vh;
 }
 
